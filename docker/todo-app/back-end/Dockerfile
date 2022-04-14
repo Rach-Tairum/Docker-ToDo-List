@@ -1,5 +1,6 @@
 #depois do as é o nome da aplicação, assim como 
 FROM node:14-alpine AS todobackend
+# quando colocamos o workdir ele automaticamente ja entra na pasta, por isso nas demias pode usar somente o .
 WORKDIR /
 # expoe a porta 3001 do host
 EXPOSE 3001
