@@ -8,4 +8,4 @@ ADD /node_modules.tar.gz .
 # copia tudo q falta dentro do diretório back end
 COPY . .
 #depois dele acabou a imagem, é o ultimo comando a ser executado
-ENTRYPOINT [ "npm test" ]
+ENTRYPOINT npm test
