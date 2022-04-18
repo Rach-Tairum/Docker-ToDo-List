@@ -6,7 +6,7 @@ WORKDIR /
 EXPOSE 3001
 # Adiciona e descompacta tudo q tem no node modules, assim, não precisa dar npm install
 # tar.gz é um arquivo zipado para que todos tenham o mesmo node_modules
-ADD /node_modules.tar.gz .
+ADD node_modules.tar.gz .
 # copia tudo q falta dentro do diretório back end
 COPY . .
 #depois dele acabou a imagem, é o ultimo comando a ser executado
